@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   const router = useRouter();
-  const background_setting: string = `bg-[url('https://res.cloudinary.com/dq9alywlv/image/upload/v1729959407/background_y2nogm.jpg')] bg-no-repeat bg-cover`;
+  // const background_setting: string = `bg-[url('https://res.cloudinary.com/dq9alywlv/image/upload/v1729959407/background_y2nogm.jpg')] bg-no-repeat bg-cover`;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -15,7 +15,7 @@ export default function Home() {
     // Cleanup the timer if the component unmounts before the timer completes
     return () => clearTimeout(timer);
   }, [router]);
-  
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[url('https://res.cloudinary.com/dq9alywlv/image/upload/v1729959407/background_y2nogm.jpg')] bg-no-repeat bg-cover">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
