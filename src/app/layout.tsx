@@ -43,7 +43,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} w-full flex antialiased bg-[#222B45]`}
       >
-        <div className="h-full overflow-y-scroll">
+        <div className="h-full scroll-auto scrollbar-hide">
           <Provider>{children}</Provider>
         </div>
       </body>
