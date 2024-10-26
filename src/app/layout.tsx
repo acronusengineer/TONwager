@@ -4,6 +4,11 @@ import localFont from "next/font/local";
 import Provider from "@/providers";
 import "./globals.css";
 
+export const metadata: Metadata = {
+  title: "TONwager",
+  description: "Innovative TON/USDT event betting platform",
+};
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -14,11 +19,6 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
-export const metadata: Metadata = {
-  title: "TONwager",
-  description: "Innovative TON/USDT event betting platform",
-};
 
 export default function RootLayout({
   children,
@@ -41,7 +41,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('https://res.cloudinary.com/dq9alywlv/image/upload/v1729959407/background_y2nogm.jpg')] bg-no-repeat bg-cover`}
+        className={`${geistSans.variable} ${geistMono.variable} w-full flex antialiased bg-[#222B45]`}
       >
         <div className="h-full overflow-y-scroll">
           <Provider>{children}</Provider>
